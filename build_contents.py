@@ -28,7 +28,7 @@ def main():
             # Might be a file
             continue
         section_name = format_name(remove_number(dirname))
-        print("\section{{{}}}".format(section_name))
+        print(r"\section{{{}}}".format(section_name))
 
         for file in os.listdir(dirpath):
             filepath = os.path.join(dirpath, file)
